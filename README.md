@@ -12,7 +12,7 @@ cd game
 python3 main.py
 ```
 
-## Chart Project
+## App Project
 
 Para este proyecto, use un entorno virtual para instalar matplotlib.
 
@@ -39,6 +39,36 @@ Despues para correr el codigo use:
 
 ```sh
 source ~/py_envs/bin/activate #Si es que no esta activo el entorno virtual.
-python3 charts/main.py
+python3 app/main.py
+```
 
 
+## Webserver Project
+
+Para este proyecto se crear nuevamente un entorno virtual.
+
+1. Crear entono virtual:
+
+```sh
+python3 -m venv ~/py_envs
+
+```
+2. Activar entorno virtual:
+
+```sh
+source ~/py_envs/bin/activate
+
+```
+
+3. Instalar la libreria:
+
+```sh
+pip install pip install -r webserver/requirements.txt
+
+```
+4. Despues para correr el codigo use:
+
+```sh
+source ~/py_envs/bin/activate #Si es que no esta activo el entorno virtual.
+python3 webserver/main.py
+```
