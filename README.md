@@ -70,5 +70,5 @@ pip install pip install -r webserver/requirements.txt
 
 ```sh
 source ~/py_envs/bin/activate #Si es que no esta activo el entorno virtual.
-python3 webserver/main.py
+uvicorn main:app --reload
 ```
