@@ -81,6 +81,35 @@ Para ejecutar el proyecto app con docker se usan los sigueintes comandos:
 1. Contruimos el contenedor:
 
 ```sh
+cd app
+sudo docker-compose build
+
+```
+
+2. Activamos el servicio:
+
+```sh
+sudo docker-compose up -d 
+```
+
+3. Corremos el bash:
+```sh
+sudo docker-compose exec app-csv bash
+```
+4. Despues para correr el codigo use:
+
+```sh
+python app/main.py
+```
+
+## webserver Project (Docker)
+
+Para ejecutar el proyecto app con docker se usan los sigueintes comandos:
+
+1. Contruimos el contenedor:
+
+```sh
+cd webserver
 sudo docker-compose build
 
 ```
@@ -91,18 +120,10 @@ sudo docker-compose ps
 
 ```
 
-3. Activamos el servcicio:
+3. Activamos el servicio:
 
 ```sh
 sudo docker-compose up -d 
 ```
+4. ir a http://127.0.0.1/contacto
 
-4. Corremos el bash:
-```sh
-sudo docker-compose exec app-csv bash
-```
-Despues para correr el codigo use:
-
-```sh
-python app/main.py
-```
