@@ -72,3 +72,37 @@ pip install pip install -r webserver/requirements.txt
 source ~/py_envs/bin/activate #Si es que no esta activo el entorno virtual.
 uvicorn main:app --reload
 ```
+
+
+## App Project (Docker)
+
+Para ejecutar el proyecto app con docker se usan los sigueintes comandos:
+
+1. Contruimos el contenedor:
+
+```sh
+sudo docker compose build
+
+```
+2. Validamos la creacion del contenedor:
+
+```sh
+sudo docker compose ps
+
+```
+
+3. Activamos el servcicio:
+
+```sh
+sudo docker compose up -d 
+```
+
+4. Corremos el bash:
+```sh
+sudo docker-compose exec app-csv bash
+```
+Despues para correr el codigo use:
+
+```sh
+python app/main.py
+```
