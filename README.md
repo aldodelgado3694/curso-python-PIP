@@ -81,20 +81,20 @@ Para ejecutar el proyecto app con docker se usan los sigueintes comandos:
 1. Contruimos el contenedor:
 
 ```sh
-sudo docker compose build
+sudo docker-compose build
 
 ```
 2. Validamos la creacion del contenedor:
 
 ```sh
-sudo docker compose ps
+sudo docker-compose ps
 
 ```
 
 3. Activamos el servcicio:
 
 ```sh
-sudo docker compose up -d 
+sudo docker-compose up -d 
 ```
 
 4. Corremos el bash:
